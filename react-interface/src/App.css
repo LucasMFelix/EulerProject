@@ -1,0 +1,107 @@
+/* App div */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #edf7fc;
+}
+
+.logo-line {
+  display: flex;
+  top: 0; /* Aligns to the top */
+  left: 0; /* Aligns to the left */
+  padding: 10px; /* Adds some spacing around the image */
+  width: 10%;
+  height: 10%;
+}
+
+/* logo-image */
+.logo-image {
+  width: 80%; /* Sets a percentage-based width */
+  height: auto; /* Ensures the aspect ratio is preserved */
+}
+
+/* content-wrapper */
+.content-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex; /* Enables flexible layouts */
+}
+
+/* line */
+.content-line {
+  width: 100%;
+  gap: 5%;
+  display: flex; /* Items are stacked horizontally */
+  flex-wrap: nowrap; /* Prevents wrapping unless explicitly wanted */
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10%;
+}
+
+/* line */
+.content-sub-line {
+  width: 100%;
+  gap: 5%;
+  display: flex; /* Items are stacked horizontally */
+  flex-wrap: nowrap; /* Prevents wrapping unless explicitly wanted */
+}
+
+/* column */
+.content-column {
+  height: 100%;
+  display: flex; /* Items are stacked vertically */
+  flex-direction: column; /* Makes the children stack vertically */
+  gap: 5%;
+}
+
+/* name-line container */
+.name-line {
+  position: absolute; /* Positions it relative to the entire page */
+  bottom: 0; /* Anchors it to the bottom of the page */
+  right: 0; /* Anchors it to the right of the page */
+  padding: 10px; /* Adds spacing around the name */
+  background-color: transparent; /* Optional: ensures it doesn't block content */
+  z-index: 10; /* Ensures it appears on top of other elements */
+}
+
+/* name text */
+.name {
+  margin: 0; /* Removes any default margin */
+  font-size: 16px; /* Adjust font size as needed */
+  color: #333; /* Optional: sets the text color */
+}
+
+.button {
+  width: 40%;
+  background-color: #c2d6f6;
+  border-color: #50b8e7;
+  font-family: Verdana, sans-serif;
+}
+
+.button:hover {
+  background-color: #1b50a7;
+  font-family: Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.problem-label {
+  display: flex; /* Aligns label and input */
+  font-size: 16px; /* Adjust the font size for better readability */
+  font-family: Verdana, sans-serif;
+  gap: 10px;
+}
+
+.problem-input {
+  width: 20%; /* Sets the input width */
+  padding: 5px; /* Adds padding inside the input for better appearance */
+  font-size: 14px; /* Adjusts the font size */
+  border: 1px solid #ccc; /* Defines a border around the input */
+  border-radius: 4px; /* Rounds the input corners */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.solution{
+  font-size: 14px;
+}

@@ -1,0 +1,1 @@
+# This project was created aiming to structure the solutions I created to the euler project problems
